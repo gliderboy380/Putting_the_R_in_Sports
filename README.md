@@ -1,4 +1,4 @@
 # Putting the R in Sports
 ## This is the repo for my presentation
 
-This is a repository 
+You need to install R on yout computer. 

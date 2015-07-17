@@ -109,4 +109,22 @@ summary(Aaron.300$OBP)
 summary(Jeter.300$OBP)
 summary(Arod.30d$OBP)
 ```
+Damon vs Hatte (2002 OBP/Salary comparision) - Moneyball
+
+```
+Batting = read.csv("Batting.csv")
+Salaries = read.csv("Salaries.csv")
+
+Damon.02 = subset(Batting, playerID == "damonjo01" & yerarID == "2002") 
+Damon.02$OBP = subset(Damon.02, (H + BB + HBP) / (AB + BB + HBP + SF)) 
+Damon.02.sal = subset(Salaries, playerID == "damonjo01" & yerarID == "2002") 
+Damon.02$OBP
+Damon.02.sal$salary
+
+Hatte.02 = subset(Batting, playerID == "hattesc01" & yerarID == "2002") 
+Hatte.02$OBP = subset(Hatte.02, (H + BB + HBP) / (AB + BB + HBP + SF)) 
+Hatte.02.sal = subset(Salaries, playerID == "hattesc01" & yerarID == "2002") 
+Hatte.02$OBP
+Hatte.02.sal$salary
+```
 
