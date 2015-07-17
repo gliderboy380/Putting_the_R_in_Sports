@@ -3,7 +3,7 @@
 ERA Example
 
 ```
-era = read.csv("era.csv")
+era = c(2.21,3.50,2.52,2.87,2.90)
 era
 
 median(era)
