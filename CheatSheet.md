@@ -110,24 +110,3 @@ summary(Jeter.300$OBP)
 summary(Arod.30d$OBP)
 ```
 
-
-
-
-
-
-
-sudo apt-get install -y unzip wget curl
-
-wget -qO- https://experimental.docker.com/ | sh
-
-cd /usr/bin
-sudo wget https://dl.bintray.com/mitchellh/consul/0.5.2_linux_amd64.zip
-sudo unzip *.zip
-sudo rm *.zip
-
-docker -v 
-consul --version
-
-
-# On host 1
-
