@@ -94,14 +94,15 @@ summary(Jeter.300$H)
 summary(Arod.30d$H)
 ```
 
-Calculate OBP's
+Calculate OBP's 
+(Note for Ruth they didn't keep SF's back then)
 
 ```
-Ruth.300 = with(Ruth, (H + BB + HBP) / (AB + BB + HBP)) 
-Mays.300 = with(Mays, (H + BB + HBP) / (AB + BB + HBP + SF)))
-Aaron.300 = with(Aaron, (H + BB + HBP) / (AB + BB + HBP + SF)) 
-Jeter.300 = with(Jeter, (H + BB + HBP) / (AB + BB + HBP + SF)) 
-Arod.300 = with(Arod, (H + BB + HBP) / (AB + BB + HBP + SF)) )
+Ruth.300$OBP = with(Ruth.300, (H + BB + HBP) / (AB + BB + HBP)) 
+Mays.300$OBP = with(Mays.300, (H + BB + HBP) / (AB + BB + HBP + SF))
+Aaron.300$OBP = with(Aaron.300, (H + BB + HBP) / (AB + BB + HBP + SF)) 
+Jeter.300$OBP = with(Jeter.300, (H + BB + HBP) / (AB + BB + HBP + SF)) 
+Arod.300$OBP = with(Arod.300, (H + BB + HBP) / (AB + BB + HBP + SF)) 
 
 summary(Ruth.300$OBP)
 summary(Mays.300$OBP)
