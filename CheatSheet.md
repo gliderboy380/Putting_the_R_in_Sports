@@ -35,7 +35,7 @@ Stadard Deviation Example
 abc = c(6.5,6.6,6.7,6.8,7.1,7.3,7.4,7.7,7.7,7.7)
 abc
 
-xyx = c(4.2,5.4,5.8,6.2,6.7,7.7,7.7,8.5,9.3,10.0)
+xyz = c(4.2,5.4,5.8,6.2,6.7,7.7,7.7,8.5,9.3,10.0)
 xyz
 
 summary(abc)
@@ -97,11 +97,11 @@ summary(Arod.30d$H)
 Calculate OBP's
 
 ```
-Ruth.300 = subset(Ruth, (H + BB + HBP) / (AB + BB + HBP)) 
-Mays.300 = subset(Mays, (H + BB + HBP) / (AB + BB + HBP + SF)))
-Aaron.300 = subset(Aaron, (H + BB + HBP) / (AB + BB + HBP + SF)) 
-Jeter.300 = subset(Jeter, (H + BB + HBP) / (AB + BB + HBP + SF)) 
-Arod.300 = subset(Arod, (H + BB + HBP) / (AB + BB + HBP + SF)) )
+Ruth.300 = with(Ruth, (H + BB + HBP) / (AB + BB + HBP)) 
+Mays.300 = with(Mays, (H + BB + HBP) / (AB + BB + HBP + SF)))
+Aaron.300 = with(Aaron, (H + BB + HBP) / (AB + BB + HBP + SF)) 
+Jeter.300 = with(Jeter, (H + BB + HBP) / (AB + BB + HBP + SF)) 
+Arod.300 = with(Arod, (H + BB + HBP) / (AB + BB + HBP + SF)) )
 
 summary(Ruth.300$OBP)
 summary(Mays.300$OBP)
@@ -116,13 +116,13 @@ Batting = read.csv("Batting.csv")
 Salaries = read.csv("Salaries.csv")
 
 Damon.02 = subset(Batting, playerID == "damonjo01" & yerarID == "2002") 
-Damon.02$OBP = subset(Damon.02, (H + BB + HBP) / (AB + BB + HBP + SF)) 
+Damon.02$OBP = with(Damon.02, (H + BB + HBP) / (AB + BB + HBP + SF)) 
 Damon.02.sal = subset(Salaries, playerID == "damonjo01" & yerarID == "2002") 
 Damon.02$OBP
 Damon.02.sal$salary
 
 Hatte.02 = subset(Batting, playerID == "hattesc01" & yerarID == "2002") 
-Hatte.02$OBP = subset(Hatte.02, (H + BB + HBP) / (AB + BB + HBP + SF)) 
+Hatte.02$OBP = with(Hatte.02, (H + BB + HBP) / (AB + BB + HBP + SF)) 
 Hatte.02.sal = subset(Salaries, playerID == "hattesc01" & yerarID == "2002") 
 Hatte.02$OBP
 Hatte.02.sal$salary
