@@ -11,5 +11,8 @@ The basic commands used in the presentation are in **CheatSheet.MD**
 
 The **Dockerfile** file will build a Docker image with R and the complete Lahman database installed. 
 
+Here is a link to the the video presentation: 
+**["Putting the R in Sports - Devopsdays Minneapolis"](https://www.youtube.com/watch?v=qAMu5dRDmGA&feature=youtu.be)**
+
 Here is a link to the Slide Deck version of the presentation
 **["Putting the R in Sports"](http://www.slideshare.net/botchagalupe/putting-the-r-in-sports)**
