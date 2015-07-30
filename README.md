@@ -14,6 +14,12 @@ Here is a link to the pre-built Docker Hub Lahman/R image
 
 You need to have R installed on your computer. 
 
+If you have Docker installed you can run the [gliderboy380/lahman image](https://registry.hub.docker.com/u/gliderboy380/lahman/) as follows:
+
+```
+docker run -d -p 8787:8787 gliderboy380/lahman
+```
+
 The basic commands used in the presentation are in **CheatSheet.MD**
 
 **Batting.csv** and **Salaries.csv** are from the [Lahman’s Baseball Database](http://www.seanlahman.com/baseball-archive/statistics/())
